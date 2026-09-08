@@ -1,0 +1,11 @@
+# Pins: the trust boundary. The engine REPO is pinned here; only the ref
+# (project.options.oaktree-sapling.version in myst.yml) floats. Read by both the CI shim and
+# local `oak`, so the two cannot drift. CODEOWNERS-gated, because an instance config can name
+# MyST plugins (JS at build time), which makes it code-adjacent.
+# https://scholar.nexus/oaktree-sapling/design/paper-ci
+
+# Interim home, and the only place it is named, so the canonical move is a one-line swap.
+engine_repo: pollomarzo/whitelabel
+
+# owner/repo of INSTANCE-CONFIG, or "." when it is co-located in this repo (repo=journal).
+instance_repo: pollomarzo/sapling-review

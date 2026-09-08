@@ -1,0 +1,26 @@
+name: Engine version bump
+
+# Scheduled logic-ref bump: floats project.options.oaktree-sapling.version to the latest engine
+# release and opens a one-line PR. The bump is DATA (myst.yml, not CODEOWNERS-gated) and touches
+# no secret, so an editor merges it once the preview build shows the result. The rare frozen-file
+# resync is the manual `oak upgrade --files-only` path instead.
+
+on:
+  schedule:
+    - cron: "17 4 * * 1" # weekly, Monday 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit the bump branch
+  pull-requests: write # open the bump PR
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: ./.github/actions/engine
+        with:
+          args: upgrade --paper . --version-only --yes
+        env:
+          GH_TOKEN: ${{ github.token }}
