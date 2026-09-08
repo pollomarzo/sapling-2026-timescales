@@ -38,19 +38,14 @@ report the mean and standard deviation per region.
 
 ## Results
 
-The recovered timescales increase monotonically along the hierarchical axis
-([](#fig-timescales)). The shortest-memory region sits near a few sampling steps, the
+The recovered timescales increase monotonically along the hierarchical axis, as the figure
+below shows. The shortest-memory region sits near a few sampling steps, the
 longest near forty, and the across-seed spread is small at every level, so the ordering is not an
 artefact of a single simulation. A one-parameter gradient is therefore sufficient to reproduce
-the qualitative signature that motivates the hierarchy account.
+the qualitative signature that motivates the hierarchy account. On the web version, hover any
+point in the figure to read its across-seed mean and spread.
 
-:::{figure} figures/timescales.svg
-:label: fig-timescales
-:align: center
-
-Intrinsic timescale $\tau$ recovered from each region's autocorrelation, plotted against
-hierarchical level. Points are the across-seed mean; the shaded band is one standard deviation.
-The trend is monotonic and spans roughly an order of magnitude.
+:::{embed} #fig-tau
 :::
 
 ## Discussion
