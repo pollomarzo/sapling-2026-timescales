@@ -28,3 +28,6 @@ project:
     oaktree-sapling:
       version: v0.0.4
       edition: "2026"
+  date: 2026-09-08
+  doi: 10.5072/zenodo.599162
+  github: https://github.com/pollomarzo/sapling-2026-timescales
