@@ -17,6 +17,12 @@ project:
         - conceptualization
         - formal analysis
         - writing - original draft
+    - name: Sam Reyes
+      affiliations:
+        - Institute for Computational Neuroscience
+      roles:
+        - data curation
+        - validation
   keywords:
     - intrinsic timescales
     - cortical hierarchy
