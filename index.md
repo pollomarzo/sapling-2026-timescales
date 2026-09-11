@@ -45,7 +45,10 @@ artefact of a single simulation. A one-parameter gradient is therefore sufficien
 the qualitative signature that motivates the hierarchy account. On the web version, hover any
 point in the figure to read its across-seed mean and spread.
 
-:::{embed} #fig-tau
+:::{figure} #fig-tau
+:label: fig-timescales
+Intrinsic timescale recovered from each region's autocorrelation, against hierarchical level.
+Points are the across-seed mean; the band is one standard deviation.
 :::
 
 ## Discussion
