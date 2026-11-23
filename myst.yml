@@ -26,7 +26,7 @@ project:
     - bib.bib
   options:
     oaktree-sapling:
-      version: v0.0.4
+      version: v0.0.7
       edition: "2026"
   date: 2026-09-08
   doi: 10.5072/zenodo.599162
